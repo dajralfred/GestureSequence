@@ -75,7 +75,7 @@ void loop() {
   switch(state){
     case 0:{//Idle State: 1Hz LED blink. Button debounced
       idleCurTime=millis();
-      if((idleCurTime-idlePrevTime)>=1000){
+      if((idleCurTidcxme-idlePrevTime)>=1000){
         ledState=!ledState;
         digitalWrite(PIN_LED_13,ledState);
         idlePrevTime=idleCurTime;
